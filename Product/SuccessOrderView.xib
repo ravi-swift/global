@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessOrderView" customModule="VOnPharmaCare" customModuleProvider="target">
+            <connections>
+                <outlet property="closeBtn" destination="hal-pL-KoE" id="m89-Em-m3I"/>
+                <outlet property="homeBtn" destination="x3x-v2-55u" id="ski-gP-5nf"/>
+                <outlet property="mainView" destination="dub-Dw-hKr" id="IT5-8P-oWI"/>
+                <outlet property="myOderBtn" destination="AQU-C9-Km7" id="WoH-Rh-CBs"/>
+                <outlet property="orderNumber" destination="Zwa-S5-CyZ" id="Ifp-zJ-mwP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="277"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dub-Dw-hKr">
+                    <rect key="frame" x="0.0" y="22" width="362" height="255"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Place Successfully" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdX-ve-HYt">
+                            <rect key="frame" x="5" y="30" width="352" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.13725490200000001" green="0.59607843140000005" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_thumb" translatesAutoresizingMaskIntoConstraints="NO" id="rjt-Bm-9UG">
+                            <rect key="frame" x="151" y="70.333333333333329" width="60" height="59.999999999999986"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="rjt-Bm-9UG" secondAttribute="height" multiplier="1:1" id="oEf-N4-Rle"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Order Number :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQh-fy-KSB">
+                            <rect key="frame" x="5" y="150.33333333333334" width="352" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwa-S5-CyZ">
+                            <rect key="frame" x="5" y="172.33333333333334" width="352" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQU-C9-Km7" customClass="BorderButton" customModule="VOnPharmaCare" customModuleProvider="target">
+                            <rect key="frame" x="10" y="205" width="163.66666666666666" height="40"/>
+                            <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="ciq-s9-nvR"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonFontSize">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="buttonName" value="My Order"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                    <color key="value" red="0.13725490200000001" green="0.59607843140000005" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="buttonTextColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.13725490200000001" green="0.59607843140000005" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3x-v2-55u" customClass="BorderButton" customModule="VOnPharmaCare" customModuleProvider="target">
+                            <rect key="frame" x="188.66666666666663" y="205" width="163.33333333333337" height="40"/>
+                            <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="buttonName" value="Home"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="buttonTextColor">
+                                    <color key="value" red="0.13725490200000001" green="0.59607843140000005" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.13725490200000001" green="0.59607843140000005" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonFontSize">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rjt-Bm-9UG" firstAttribute="centerX" secondItem="dub-Dw-hKr" secondAttribute="centerX" id="07O-Vk-BY6"/>
+                        <constraint firstAttribute="trailing" secondItem="hQh-fy-KSB" secondAttribute="trailing" constant="5" id="2mz-MJ-Mss"/>
+                        <constraint firstItem="AQU-C9-Km7" firstAttribute="leading" secondItem="dub-Dw-hKr" secondAttribute="leading" constant="10" id="7KQ-gt-B3T"/>
+                        <constraint firstItem="x3x-v2-55u" firstAttribute="height" secondItem="AQU-C9-Km7" secondAttribute="height" id="8R0-Rd-pnT"/>
+                        <constraint firstAttribute="trailing" secondItem="Zwa-S5-CyZ" secondAttribute="trailing" constant="5" id="BKX-NS-jYs"/>
+                        <constraint firstAttribute="bottom" secondItem="x3x-v2-55u" secondAttribute="bottom" constant="10" id="FJ4-kq-zBY"/>
+                        <constraint firstAttribute="trailing" secondItem="x3x-v2-55u" secondAttribute="trailing" constant="10" id="O9d-SS-zIL"/>
+                        <constraint firstItem="x3x-v2-55u" firstAttribute="leading" secondItem="AQU-C9-Km7" secondAttribute="trailing" constant="15" id="WCy-op-2S2"/>
+                        <constraint firstItem="Zwa-S5-CyZ" firstAttribute="leading" secondItem="dub-Dw-hKr" secondAttribute="leading" constant="5" id="Zth-zF-8K3"/>
+                        <constraint firstItem="Zwa-S5-CyZ" firstAttribute="top" secondItem="hQh-fy-KSB" secondAttribute="bottom" constant="5" id="erx-rL-sif"/>
+                        <constraint firstItem="NdX-ve-HYt" firstAttribute="leading" secondItem="dub-Dw-hKr" secondAttribute="leading" constant="5" id="h0c-Vp-7mP"/>
+                        <constraint firstItem="hQh-fy-KSB" firstAttribute="top" secondItem="rjt-Bm-9UG" secondAttribute="bottom" constant="20" id="i0a-OT-giQ"/>
+                        <constraint firstItem="rjt-Bm-9UG" firstAttribute="top" secondItem="NdX-ve-HYt" secondAttribute="bottom" constant="20" id="ieW-ML-IGf"/>
+                        <constraint firstAttribute="trailing" secondItem="NdX-ve-HYt" secondAttribute="trailing" constant="5" id="mpu-qX-oOY"/>
+                        <constraint firstAttribute="bottom" secondItem="AQU-C9-Km7" secondAttribute="bottom" constant="10" id="pWb-GP-zxT"/>
+                        <constraint firstItem="NdX-ve-HYt" firstAttribute="top" secondItem="dub-Dw-hKr" secondAttribute="top" constant="30" id="px3-2Z-DUS"/>
+                        <constraint firstItem="hQh-fy-KSB" firstAttribute="leading" secondItem="dub-Dw-hKr" secondAttribute="leading" constant="5" id="q0i-wX-QPR"/>
+                        <constraint firstItem="x3x-v2-55u" firstAttribute="width" secondItem="AQU-C9-Km7" secondAttribute="width" id="xJb-36-5le"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hal-pL-KoE" customClass="CloseButton" customModule="VOnPharmaCare" customModuleProvider="target">
+                    <rect key="frame" x="298" y="0.0" width="44" height="44"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hal-pL-KoE" secondAttribute="height" multiplier="1:1" id="Fhk-mR-fPN"/>
+                        <constraint firstAttribute="height" constant="44" id="uRt-Y7-UST"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dub-Dw-hKr" secondAttribute="trailing" id="2Av-JL-Ae7"/>
+                <constraint firstAttribute="bottom" secondItem="dub-Dw-hKr" secondAttribute="bottom" id="4BH-1i-WYd"/>
+                <constraint firstItem="dub-Dw-hKr" firstAttribute="trailing" secondItem="hal-pL-KoE" secondAttribute="trailing" constant="20" id="QFV-k6-hyv"/>
+                <constraint firstItem="hal-pL-KoE" firstAttribute="bottom" secondItem="dub-Dw-hKr" secondAttribute="top" constant="22" id="blr-qd-7ch"/>
+                <constraint firstItem="dub-Dw-hKr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="g1s-im-ZF4"/>
+                <constraint firstItem="dub-Dw-hKr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rb5-uq-ItE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="140.57971014492756" y="-67.255434782608702"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_thumb" width="60" height="60"/>
+    </resources>
+</document>
